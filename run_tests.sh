@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-workon python2.7
+. ~/.virtualenvs/python2.7/bin/activate
 python -m unittest discover pystache/tests

@@ -39,7 +39,7 @@ class DefaultsConfigurableTestCase(unittest.TestCase, AssertStringMixin):
         template = u"{{foo}}"
         context = {'foo': '<'}
         actual = pystache.render(template, context)
-        self.assertString(actual, u"&lt;")
+        self.assertString(actual, u"lt;")
 
         pystache.defaults.TAG_ESCAPE = lambda u: u
         actual = pystache.render(template, context)

@@ -4,7 +4,7 @@
 
 rm -f pep8.log pyflakes.log
 
-PYTHONPATH=. python -m coverage run pystache/commands/test.py
+PYTHONPATH=. python -m coverage run test.py
 
 python -m coverage xml -o coverage.xml
 python -m coverage html -d coverage

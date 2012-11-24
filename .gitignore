@@ -19,3 +19,6 @@ pystache.egg-info
 coverage.xml
 python_tests_xml
 .coverage
+coverage
+pep8.log
+pyflakes.log

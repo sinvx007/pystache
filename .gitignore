@@ -16,3 +16,6 @@ dist
 MANIFEST
 pystache.egg-info
 .*.swp
+coverage.xml
+python_tests_xml
+.coverage

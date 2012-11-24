@@ -26,6 +26,7 @@ class MockStdout(object):
 class CommandsTestCase(unittest.TestCase):
 
     def setUp(self):
+        self._stdout = sys.stdout
         sys.stdout = MockStdout()
 
     def callScript(self, template, context):
@@ -42,4 +43,4 @@ class CommandsTestCase(unittest.TestCase):
         self.assertEqual(actual, u"Hi world\n")
 
     def tearDown(self):
-        sys.stdout = ORIGINAL_STDOUT
+        sys.stdout = self._stdout

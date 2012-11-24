@@ -23,5 +23,5 @@ class RegularExpressionTestCase(unittest.TestCase):
         re = make_re(DELIMITERS)
         match = re.search("b  {{test}}")
 
-        self.assertEqual(match.start(), 2)
+        self.assertEqual(match.start(), 1)
 
